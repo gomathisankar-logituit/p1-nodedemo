@@ -11,7 +11,7 @@ const responseData = {
   endingMessage:"Sample code for testing"
 }
 
-app.set('port', (process.env.PORT || 80))
+app.set('port', (process.env.PORT || 5000))
 
 app.get('/', function(request, response) {
   response.send(JSON.stringify(responseData))
