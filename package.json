@@ -4,6 +4,7 @@
   "description": "p1-nodedemo",
   "main": "index.js",
   "scripts": {
+    "start": "pm2 start index.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
