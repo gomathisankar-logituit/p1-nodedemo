@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: p1-nodedemo
+ labels:
+   app: p1-nodedemo
+spec:
+ selector:
+  matchLabels:
+   app: p1-nodedemo
+ template:
+  metadata:
+   labels:
+    app: p1-nodedemo
+  spec:
+   containers:
+   - image: gomathisankardockeruser/p1nodedemo
+     name: nodejs-api
+     imagePullPolicy: Always
+     ports:
+       - containerPort: 5000
